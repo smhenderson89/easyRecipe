@@ -40,6 +40,7 @@ function SearchRecipe() {
     
     return (
         <div>
+            <h3>Recipe Search testing</h3>
             <form onSubmit = {getRecipe}>
                 <input value = {inputValue} onChange = {handleChange} type = "text" />
                 <button type = "submit">Search Recipe</button>
