@@ -49,13 +49,7 @@ function SearchRecipe() {
                 <Row>
                 {recipeList && recipeList.map((recipe, index) => {
                     return (
-                        <Col key = {index} 
-                        xs={12}
-                        sm={6}
-                        md={6}
-                        lg={6}
-                        xl={4}
-                        className = "mb-6">
+                        <Col key = {index} /*xs={12} sm={6} md={6} lg={6} xl={4} */                        className = "mb-6">
                         <RecipeCard index = {index} recipe = {recipe.recipe} />
                         </Col>
                         )

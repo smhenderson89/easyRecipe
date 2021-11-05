@@ -14,7 +14,8 @@ const RecipeCard = (props) => {
                     <div> Time to Make: {singleRecipe.totalTime} </div>
                     <div> Calories: {Math.round(singleRecipe.calories / singleRecipe.yield)} </div>
                     <div> Servings: {singleRecipe.yield} </div> 
-                <Button variant="primary">Go somewhere</Button>
+
+                <Button variant="primary">Source</Button> <a href = {singleRecipe.url}>Link</a>
                 </Card.Body>
             </Card>
         </div>
