@@ -42,9 +42,26 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  border: 100px solid black;
+}
+
+.recipe-card{
+  margin-bottom: 20px;
 }
 
 .recipe-container{
-  margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
+
+}
+
+.recipe-pic {
+  max-width: 50%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border: 3px solid black;
 }

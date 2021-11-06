@@ -19,6 +19,8 @@ function SearchRecipe() {
         // working API: https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}
         // TODO: Implement adding extra search options and add options accordingly
         // TODO: Filter out data where no recipe exists for the meal
+        // TODO: Show existing API call when go back to main page after going to other pages
+        // TODO:    Save call on seperate call on Redux
         // Run API with default search to display information
         axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=chicken&calories=500-1000&imageSize=SMALL`,
             {
@@ -38,6 +40,7 @@ function SearchRecipe() {
         setInputValue(event.target.value)
     }
     
+    // Return Cards of recipes
     return (
         <div>
             <h3>Recipe Search testing</h3>
@@ -50,7 +53,7 @@ function SearchRecipe() {
                 <Row>
                 {recipeList && recipeList.map((recipe, index) => {
                     return (
-                        <Col key = {index} /*xs={12} sm={6} md={6} lg={6} xl={4} */                        className = "mb-6">
+                        <Col key = {index} xs={12} sm={6} md={6} lg={4} xl={3}                        className = "mb-6">
                         <RecipeCard index = {index} recipe = {recipe.recipe} />
                         </Col>
                         )

@@ -6,10 +6,8 @@ function NavBar() {
     return (
         <div>
             <nav>
-                <Link to ='/'>Home</Link>
-                <Link to ='/Detailed'>Detailed</Link>
-                <Link to ='/Favorites'>Favorites</Link>
-
+                <Link to ='/'>  Home  </Link>
+                <Link to ='/Favorites'>  Favorites  </Link>
             </nav>
         </div>
     )

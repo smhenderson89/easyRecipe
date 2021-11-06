@@ -1,0 +1,1 @@
+export const FAVORITE_RECIPE = "FAVORITE_RECIPE"
