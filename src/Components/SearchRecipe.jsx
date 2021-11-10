@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios';
 import RecipeCard from './RecipeCard';
 import {Col, Row} from 'react-bootstrap'
@@ -14,13 +14,7 @@ function SearchRecipe() {
         // Making API Axios call to Recipe app
         const APP_ID = "0f25f43a";
         const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
-        // const exampleAPI = "https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=0f25f43a&app_key=4638dc3291ceb38bd729a2d8d0bb4fbd";
-
-        // working API: https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}
-        // TODO: Implement adding extra search options and add options accordingly
-        // TODO: Show existing API call when go back to main page after going to other pages
-        // TODO:    Save call on seperate call on Redux
-        // Run API with default search to display information
+     // Run API with default search to display information
         axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=${inputValue}&calories=500-1000&imageSize=SMALL&time=10-60`,
             {
                 headers: {
@@ -46,12 +40,12 @@ function SearchRecipe() {
     // Return Cards of recipes
     return (
         <div>
-            <h3>Recipe Search testing</h3>
+            <h3 class="title">Recipe Search</h3>
             <form onSubmit = {getRecipe}>
                 <input value = {inputValue} onChange = {handleChange} type = "text" />
                 <button type = "submit">Search Recipe</button>
             </form>
-            <h4>Results: </h4>
+            <h4 className = "title">Results: </h4>
             <div className="recipe-container">
                 <Row>
                 {recipeList && recipeList.map((recipe, index) => {

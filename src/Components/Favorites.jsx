@@ -3,6 +3,8 @@ import {Col, Row} from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import RecipeCard from './RecipeCard';
 
+// TODO: If not favorites selected, then show message "No Favorites selected"
+
 export default function Favorites() {
     const FavoritesData = useSelector((state) => state.Favorites);
     console.log(FavoritesData);

@@ -1,23 +1,24 @@
 import React from "react";
-import  {Navbar, Nav} from "react-bootstrap";
+import { Navbar, Nav} from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function NavBar() {
   return (
     <div>
       <nav>
-        <Container>
-          <Navbar bg="light" variant="light" fixed="top">
-            <Container>
-              <Navbar.Brand href="#home">ER</Navbar.Brand>
-              <Nav className="me-auto">
-                <Link to="/">Home</Link>
-                <Link to="/Favorites">Favorites</Link>
-              </Nav>
-            </Container>
+          <Navbar className="justify-content-center me-auto navig-style" fixed="top">
+              <div className = "logo">
+                <Navbar.Brand href="/">Easy-Recipe-123</Navbar.Brand>
+              </div>
+              <div className = "link-styling">
+                <Nav className="margin-3">
+                  <Link className = "mr-3" to="/"> Home &nbsp;   </Link>
+                  <Link className = "margin-3" to="/Favorites"> Favorites</Link>
+                </Nav>
+              </div>
           </Navbar>
-        </Container>
       </nav>
     </div>
   );

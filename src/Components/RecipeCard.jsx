@@ -29,7 +29,7 @@ const RecipeCard = (props) => {
                 <div>
                     <Link to ="/Detailed">
                         <Button onClick = {() => detailedInfo(singleRecipe)}>
-                        See More</Button>
+                        See Detailed Recipe</Button>
                     </Link>
                 </div>
                 <div>Source: <a href = {singleRecipe.url}>{singleRecipe.source}</a></div>

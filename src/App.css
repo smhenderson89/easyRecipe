@@ -1,5 +1,13 @@
+:root {
+  --SiteDarkBlue : #05386B;
+  --SiteLightGreen: #379683;
+  --SiteGreen: #5CDB95;
+  --SiteWhite: #EDF5E1;
+}
+
 .App {
   text-align: center;
+  background-color: var(--SiteGreen);
 }
 
 .App-logo {
@@ -9,7 +17,16 @@
 
 body {
   padding-top: 70px;
+  background-color: var(--SiteGreen);
 }
+
+/* Set custom colors for color scheme: 
+Dark Blue: #05386B
+Light Green: #379683
+Green: #5CDB95
+White: #EDF5E1
+
+*/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -46,7 +63,7 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  border: 100px solid black;
+  border: 3px solid black;
 }
 
 .recipe-card{
@@ -67,7 +84,8 @@ body {
 }
 
 .card {
-  border: 3px solid black;
+  border: 10px solid;
+  border-color: var(--SiteDarkBlue);
 }
 
 
@@ -84,6 +102,13 @@ input.largerCheckbox {
   height: 30px;
 }
 
+.h3.title {
+  color: var(--SiteDarkBlue)
+}
+
+.h4.title {
+  color: var(--SiteDarkBlue)
+}
 
 .list-group-item {
   text-align: left;
@@ -102,3 +127,6 @@ input.largerCheckbox {
   text-align: left;
 }
 
+.navbar {
+  background-color: var(--SiteGreen);
+}
