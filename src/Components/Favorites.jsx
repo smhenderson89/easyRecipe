@@ -3,15 +3,14 @@ import {Col, Row} from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import RecipeCard from './RecipeCard';
 
-function Favorites() {
-    const FavoritesData = useSelector((state) => state.FavoritesList);
-
-    // TODO: Enable Reactive search for favorite recipes
+export default function Favorites() {
+    const FavoritesData = useSelector((state) => state.Favorites);
+    console.log(FavoritesData);
 
     return (
         <div>
             <h1>Favorites</h1>
-            <div className="recipe-container">s
+            <div className="recipe-container">
                 <Row>
                 {FavoritesData && FavoritesData.map((recipe, index) => {
                     return (
@@ -25,5 +24,3 @@ function Favorites() {
         </div>
     )
 }
-
-export default Favorites

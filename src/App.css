@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+body {
+  padding-top: 70px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -65,3 +69,36 @@
 .card {
   border: 3px solid black;
 }
+
+
+img.detailedRecipePic {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 33%;
+  height: auto;
+
+}
+
+input.largerCheckbox {
+  width: 30px;
+  height: 30px;
+}
+
+
+.list-group-item {
+  text-align: left;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.input[type=checkbox] {
+  flex: none;
+}
+
+.tab-pane {
+  text-align: left;
+}
+

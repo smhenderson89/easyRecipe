@@ -1,8 +1,8 @@
 import { FAVORITE_RECIPE } from "../action-types/FavoriteRecipe-actiontypes";
 
-const initialState = []
+const initialState = [] // Intial state of the component
 
-export const FavoritesList = (state = initialState, action) => {
+export const Favorites = (state = initialState, action) => {
     switch(action.type) {
         case FAVORITE_RECIPE:
             return state = [...state, action.payload] 

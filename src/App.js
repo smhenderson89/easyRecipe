@@ -19,7 +19,7 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path = "/" element = {<SearchRecipe />} />
+          <Route path = "/" exact element = {<SearchRecipe />} />
           <Route path = "/Favorites" element = {<Favorites />} />
           <Route path = "/Detailed" exact element = {<DetailedRecipe />} />
         </Routes>

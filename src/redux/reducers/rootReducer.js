@@ -1,11 +1,12 @@
-import { combineReducers} from "redux";
-import { FavoritesList } from "./FavoriteRecipeReducer";
-import { SeeDetailedRecipe } from "./SeeDetailedReducer";
+import { combineReducers } from 'redux';
+import { Favorites } from "./FavoriteRecipeReducer"
+import { DetailedReducer } from './SeeDetailedReducer';
 
+// import DetailedReducer from './SeeDetailedReducer';
+// Detailed: DetailedReducer
 
 const rootReducer = combineReducers ({
-    // Put in reducer once created for recipe information
-    FavoritesList, SeeDetailedRecipe,
+    Favorites, DetailedReducer
 })
 
 export default rootReducer;

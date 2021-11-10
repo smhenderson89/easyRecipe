@@ -18,11 +18,10 @@ function SearchRecipe() {
 
         // working API: https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}
         // TODO: Implement adding extra search options and add options accordingly
-        // TODO: Filter out data where no recipe exists for the meal
         // TODO: Show existing API call when go back to main page after going to other pages
         // TODO:    Save call on seperate call on Redux
         // Run API with default search to display information
-        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=chicken&calories=500-1000&imageSize=SMALL`,
+        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=${inputValue}&calories=500-1000&imageSize=SMALL&time=10-60`,
             {
                 headers: {
                     'Access-Control-Allow-Origin': '*',
@@ -31,7 +30,11 @@ function SearchRecipe() {
             })
             .then((res) => res.data)
             .then((data) => {
-                return setRecipeList(data.hits)
+                if (data.count === 0) { // If no results for the search
+                    setRecipeList()
+                } else {
+                    return setRecipeList(data.hits)
+                }
             });
     }
     
