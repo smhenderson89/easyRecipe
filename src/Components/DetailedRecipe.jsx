@@ -10,6 +10,8 @@ function DetailedRecipe(props) {
 
   // TODO: (Stretch) Convert RecipeList into the number and name seperated into each other
 
+
+  
   return (
     <div>
       <h4>Detailed Recipe: {OneRecipe.label} </h4>
