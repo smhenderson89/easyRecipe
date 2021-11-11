@@ -8,16 +8,19 @@ function DetailedRecipe(props) {
   const RecipleList = OneRecipe.ingredientLines;
   const HealthLabels = OneRecipe.healthLabels;
   
+  // Pushed title to center of card
   return (
     <div>
       <div className="Detailed-Recipe-card-container">
-        <h4 className = "p-4">Detailed Recipe: {OneRecipe.label} </h4>
           <Row>
             <Image
               src={OneRecipe.image}
               style={{ width: "16rem" }}
               className="detailedRecipePic"
             />
+          </Row>
+          <Row>
+            <h4 className = "p-4">Detailed Recipe: {OneRecipe.label} </h4>  
           </Row>
         <div> Time to Make: {OneRecipe.totalTime} min </div>
         <div>
