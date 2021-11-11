@@ -11,15 +11,15 @@ function DetailedRecipe(props) {
   return (
     <div>
       <div className="Detailed-Recipe-card-container">
-      <h4>Detailed Recipe: {OneRecipe.label} </h4>
-        <Row>
-          <Image
-            src={OneRecipe.image}
-            style={{ width: "16rem" }}
-            className="detailedRecipePic"
-          />
-        </Row>
-        <div> Time to Make: {OneRecipe.totalTime} </div>
+        <h4 className = "p-4">Detailed Recipe: {OneRecipe.label} </h4>
+          <Row>
+            <Image
+              src={OneRecipe.image}
+              style={{ width: "16rem" }}
+              className="detailedRecipePic"
+            />
+          </Row>
+        <div> Time to Make: {OneRecipe.totalTime} min </div>
         <div>
           Calories: {Math.round(OneRecipe.calories / OneRecipe.yield)}{" "}
         </div>
