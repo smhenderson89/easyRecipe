@@ -1,26 +1,25 @@
 import React from "react";
-import { Navbar, Nav} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function NavBar() {
   return (
-    <div>
-      <nav>
-          <Navbar className="justify-content-center me-auto navig-style" fixed="top">
-              <div className = "logo">
-                <Navbar.Brand href="/">Easy-Recipe-123</Navbar.Brand>
-              </div>
-              <div className = "link-styling">
-                <Nav className="margin-3">
-                  <Link className = "mr-3" to="/"> Home &nbsp;   </Link>
-                  <Link className = "margin-3" to="/Favorites"> Favorites</Link>
-                </Nav>
-              </div>
-          </Navbar>
-      </nav>
-    </div>
+    <Navbar collapseOnSelect expand="md" fixed = "top">
+      <Container>
+        <Navbar.Brand  href="/">Easy Recipe 123</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Container className = "navBarLinks">
+            <Nav className="navbar-nav">
+              <Link className = "navLinks" to="/Favorites">Favorites</Link>
+              <Link className = "navLinks" to="/About">About</Link>
+            </Nav>
+          </Container>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

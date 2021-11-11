@@ -1,6 +1,10 @@
+/* 
+
+*/
+
 :root {
   --SiteDarkBlue : #05386B;
-  --SiteLightGreen: #379683;
+  --SiteLightGreen: #84d6c6;
   --SiteGreen: #5CDB95;
   --SiteWhite: #EDF5E1;
 }
@@ -8,6 +12,7 @@
 .App {
   text-align: center;
   background-color: var(--SiteGreen);
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -16,7 +21,7 @@
 }
 
 body {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   background-color: var(--SiteGreen);
 }
 
@@ -64,6 +69,7 @@ White: #EDF5E1
   /* justify-content: center; */
   align-items: center;
   border: 3px solid black;
+  margin: 10px 10px 10px 10px;
 }
 
 .recipe-card{
@@ -129,4 +135,15 @@ input.largerCheckbox {
 
 .navbar {
   background-color: var(--SiteGreen);
+}
+
+/* Images CSS */
+
+.about-logo {
+  max-width: 50px;
+  height: 50px;
+}
+
+.profilePic {
+  max-width: 25%;
 }

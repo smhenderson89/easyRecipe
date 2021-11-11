@@ -7,7 +7,6 @@ import RecipeCard from './RecipeCard';
 
 export default function Favorites() {
     const FavoritesData = useSelector((state) => state.Favorites);
-    console.log(FavoritesData);
 
     return (
         <div>

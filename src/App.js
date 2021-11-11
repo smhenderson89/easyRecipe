@@ -7,6 +7,7 @@ import NavBar from './Components/NavBar';
 import DetailedRecipe from './Components/DetailedRecipe';
 import Favorites from './Components/Favorites';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import About from './Components/About';
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
         <Routes>
           <Route path = "/" exact element = {<SearchRecipe />} />
           <Route path = "/Favorites" element = {<Favorites />} />
-          <Route path = "/Detailed" exact element = {<DetailedRecipe />} />
+          <Route path = "/Detailed" element = {<DetailedRecipe />} />
+          <Route path = "/About" element = {<About />} />
         </Routes>
       </BrowserRouter>        
     </div>

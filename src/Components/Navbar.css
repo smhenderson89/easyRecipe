@@ -1,4 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .navig-style {
     display: flex;
     align-items: flex-end;
+}
+
+.navLinks {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    justify-content: space-around;
 }
