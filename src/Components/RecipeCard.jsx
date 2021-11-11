@@ -50,19 +50,14 @@ const RecipeCard = (props) => {
             <Row>
               <Col>
                 <div>
-                  <Link
-                    to="/Detailed"
-                    Button
-                    onClick={() => detailedInfo(singleRecipe)}>
+                  <Link to="/Detailed" onClick={() => detailedInfo(singleRecipe)}>
                     <BsInfoSquare size="24" className="react-icon" />
                   </Link>
                 </div>
               </Col>
               <Col>
                 <div>
-                  {savedRecipe ? (
-                    <BsSuitHeartFill />
-                  ) : (
+                  {savedRecipe ? (<BsSuitHeartFill />) : (
                     <FaRegHeart
                       className="react-icon"
                       size="24"
