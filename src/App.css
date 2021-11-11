@@ -90,8 +90,9 @@ White: #EDF5E1
 }
 
 .card {
-  border: 10px solid;
+  border: 3px solid;
   border-color: var(--SiteDarkBlue);
+  margin: 5px;
 }
 
 
