@@ -118,6 +118,7 @@ On the **Shopping** tab, hit the **checkmark** when you picked up the item on th
 - [ ] Add features to cross out ingredients for shoppping list tab
 - [ ] Fix minor CSS issues
 - [ ] Prevent user from breaking website
+- [ ] Implement Back-end database with Login to remember User and favorited recipes
 - [ ] **Stretch Goal:** Check if ingredients for recipe are available at nearby grocery stores
 
 See the [open issues](https://github.com/smhenderson89/easyRecipe/issues) for a full list of proposed features (and known issues).
