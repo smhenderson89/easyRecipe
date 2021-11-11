@@ -94,6 +94,9 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+Enter in a recipe idea into the **search box** (Ex: Pancakes....yummmmm)
+![27013219-67DE-4A9E-A2D3-A2C5B2694FC7](https://user-images.githubusercontent.com/53064568/141382964-a8e3a8ef-b806-463f-9bf0-6b8b16a2f7a7.jpeg)
+
 **See more information** for a recipe by clicking the **information** icon 
 ![847C61A2-B563-44C7-A3DD-D0D163419B09](https://user-images.githubusercontent.com/53064568/141382650-12bb22a4-0161-4735-bc69-efc70596c4b7.jpeg)
 
@@ -111,6 +114,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 - [ ] Add features to cross out ingredients for shoppping list tab
 - [ ] Fix minor CSS issues
+- [ ] **Stretch Goal:** Check if ingredients for recipe are available at nearby grocery stores
 
 See the [open issues](https://github.com/smhenderson89/easyRecipe/issues) for a full list of proposed features (and known issues).
 
