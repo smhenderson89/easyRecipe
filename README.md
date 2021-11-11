@@ -72,7 +72,7 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a free API Key at [https://developer.edamam.com/?ref=public-apis](https://developer.edamam.com/?ref=public-apis)
 2. Clone the repo
    ```sh
    git clone https://github.com/smhenderson89/easyRecipe
@@ -94,10 +94,10 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-See more information for a recipe by clicking the information icon 
+**See more information** for a recipe by clicking the **information** icon 
 ![847C61A2-B563-44C7-A3DD-D0D163419B09](https://user-images.githubusercontent.com/53064568/141382650-12bb22a4-0161-4735-bc69-efc70596c4b7.jpeg)
 
-Favorite the recipe for later use by clicking the heart icon
+**Favorite** the recipe for later use by clicking the **heart** icon
 ![39426F31-1D8B-4747-8BDB-B1FD295606D9](https://user-images.githubusercontent.com/53064568/141382661-ac579a54-c82b-43cc-92c6-9448e90bf09a.jpeg)
 
 
