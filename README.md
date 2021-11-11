@@ -141,8 +141,6 @@ Project Link: [https://github.com/smhenderson89/easyRecipe](https://github.com/s
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * The DigitalCrafts Teachers and Teaching Assistants
 * [React Icons](https://react-icons.github.io/react-icons/search)
 * [Net Ninja Youtube Series](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
