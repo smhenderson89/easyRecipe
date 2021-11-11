@@ -152,3 +152,7 @@ input.largerCheckbox {
 .noFavorites {
   margin-top: 70px;
 }
+
+.row {
+  justify-content: space-around;
+}

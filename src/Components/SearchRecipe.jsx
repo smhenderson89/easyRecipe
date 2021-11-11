@@ -7,7 +7,9 @@ import Button from 'react-bootstrap/Button'
 function SearchRecipe() {
     // State trackers
     const [recipeList, setRecipeList] = useState([]);
-    const [inputValue, setInputValue] = useState(""); //initializing state to store user input value
+    const [inputValue, setInputValue] = useState(""); 
+    const [warning, setWarning] = useState(false);
+    //initializing state to store user input value
 
     const getRecipe = (event) => {
         // console.log('API called');
@@ -24,15 +26,16 @@ function SearchRecipe() {
             .then((res) => res.data)
             .then((data) => {
                 if (data.count === 0) { // If no results for the search
-                    console.log('no recipe found');
-                    return false;
-                    // TODO: Fix recipe not found!!!
+                    // console.log('no recipe found');
+                    setWarning(true)
+                    // setRecipeList()
                 } else {
+                    setWarning(false)
                     return setRecipeList(data.hits)
                 }
             });
-    }
-    
+    }    
+
     // function created to set the state of inputValue to the value of the input
     const handleChange = (event) => {
         setInputValue(event.target.value)
@@ -54,9 +57,9 @@ function SearchRecipe() {
             .then((res) => res.data)
             .then((data) => {
                 if (data.count === 0) { // If no results for the search
-                    setRecipeList()
+                    setRecipeList() 
                 } else {
-                    return setRecipeList(data.hits)
+                  return setRecipeList(data.hits)
                 }
             });
         }
@@ -67,11 +70,20 @@ function SearchRecipe() {
         // console.log('UseEffect Fired');
     }, [])
 
-    if (getRecipe === false) {
-        return (<div>No recipes found, please search another</div>)
+    // Return Cards of recipes
+    if (warning) {
+        return (
+        <div>
+            <div>
+                <h3 className="title">Recipe Search</h3>
+                <form className = "p-4" onSubmit = {getRecipe}>
+                    <input className = "pr-2" value = {inputValue} onChange = {handleChange} type = "text" placeholder="Enter recipe here..." />
+                    <Button className = "buttonSearch" variant="outline-dark" size = "sm" type = "submit">Search Recipe</Button>
+                </form>
+            </div>
+            <div>No recipe found, please try another </div>
+        </div>)
     } else {
-
-        // Return Cards of recipes
         return (
             <div>
                 <h3 className="title">Recipe Search</h3>
