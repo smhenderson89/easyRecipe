@@ -100,6 +100,9 @@ Enter in a recipe idea into the **search box** (Ex: Pancakes....yummmmm)
 **See more information** for a recipe by clicking the **information** icon 
 ![847C61A2-B563-44C7-A3DD-D0D163419B09](https://user-images.githubusercontent.com/53064568/141382650-12bb22a4-0161-4735-bc69-efc70596c4b7.jpeg)
 
+On the **Shopping** tab, hit the **checkmark** when you picked up the item on the store
+![5F2AB54B-43F3-489B-B2D0-1CFA530B8363](https://user-images.githubusercontent.com/53064568/141383108-d674c078-b29f-42ef-9849-6fbdd6f5d896.jpeg)
+
 **Favorite** the recipe for later use by clicking the **heart** icon
 ![39426F31-1D8B-4747-8BDB-B1FD295606D9](https://user-images.githubusercontent.com/53064568/141382661-ac579a54-c82b-43cc-92c6-9448e90bf09a.jpeg)
 
