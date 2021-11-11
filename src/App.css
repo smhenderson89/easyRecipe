@@ -146,4 +146,9 @@ input.largerCheckbox {
 
 .profilePic {
   max-width: 25%;
+  margin-top: 50px;
+}
+
+.noFavorites {
+  margin-top: 70px;
 }

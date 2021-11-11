@@ -24,7 +24,9 @@ function SearchRecipe() {
             .then((res) => res.data)
             .then((data) => {
                 if (data.count === 0) { // If no results for the search
-                    setRecipeList()
+                    console.log('no recipe found');
+                    return false;
+                    // TODO: Fix recipe not found!!!
                 } else {
                     return setRecipeList(data.hits)
                 }
@@ -36,7 +38,7 @@ function SearchRecipe() {
         setInputValue(event.target.value)
     }
 
-    // UseEffect for Default Information:
+    // UseEffect for Default API Call:
     const getDefaultRecipe = () => {
         // console.log('API called');
         // event.preventDefault()
@@ -65,30 +67,34 @@ function SearchRecipe() {
         // console.log('UseEffect Fired');
     }, [])
 
-    
-    // Return Cards of recipes
-    return (
-        <div>
-            <h3 className="title">Recipe Search</h3>
-            <form className = "p-3" onSubmit = {getRecipe}>
-                <input className = "pr-2" value = {inputValue} onChange = {handleChange} type = "text" placeholder="Enter recipe here..." />
-                <Button className = "buttonSearch" variant="outline-dark" size = "sm" type = "submit">Search Recipe</Button>
-            </form>
-            <div className="recipe-container">
-                <Row>
-                {recipeList && recipeList.map((recipe, index) => {
-                    return (
-                        <Col key = {index} xs={12} sm={6} md={6} lg={4} xl={3}                        
-                        className = "mb-6">
-                        <RecipeCard index = {index} recipe = {recipe.recipe} />
-                        </Col>
-                        )
-                })}
-                </Row>
-            </div>
-        </div>
+    if (getRecipe === false) {
+        return (<div>No recipes found, please search another</div>)
+    } else {
 
-    )
+        // Return Cards of recipes
+        return (
+            <div>
+                <h3 className="title">Recipe Search</h3>
+                <form className = "p-4" onSubmit = {getRecipe}>
+                    <input className = "pr-2" value = {inputValue} onChange = {handleChange} type = "text" placeholder="Enter recipe here..." />
+                    <Button className = "buttonSearch" variant="outline-dark" size = "sm" type = "submit">Search Recipe</Button>
+                </form>
+                <div className="recipe-container">
+                    <Row>
+                    {recipeList && recipeList.map((recipe, index) => {
+                        return (
+                            <Col key = {index} xs={12} sm={6} md={6} lg={4} xl={3}                        
+                            className = "mb-6">
+                            <RecipeCard index = {index} recipe = {recipe.recipe} />
+                            </Col>
+                            )
+                    })}
+                    </Row>
+                </div>
+            </div>
+
+        )
+    }
 }
 
 export default SearchRecipe
