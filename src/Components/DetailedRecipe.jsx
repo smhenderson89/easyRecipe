@@ -7,38 +7,31 @@ function DetailedRecipe(props) {
   const OneRecipe = DetailedData[0];
   const RecipleList = OneRecipe.ingredientLines;
   const HealthLabels = OneRecipe.healthLabels;
-
-  // TODO: (Stretch) Convert RecipeList into the number and name seperated into each other
-
-
   
   return (
     <div>
-      <h4>Detailed Recipe: {OneRecipe.label} </h4>
       <div className="Detailed-Recipe-card-container">
+      <h4>Detailed Recipe: {OneRecipe.label} </h4>
         <Row>
           <Image
             src={OneRecipe.image}
-            style={{ width: "75%" }}
+            style={{ width: "16rem" }}
             className="detailedRecipePic"
           />
         </Row>
         <div> Time to Make: {OneRecipe.totalTime} </div>
         <div>
-          {" "}
           Calories: {Math.round(OneRecipe.calories / OneRecipe.yield)}{" "}
         </div>
         <div> Servings: {OneRecipe.yield} </div>
         <div>
-          {" "}
           {OneRecipe.source} <a href={OneRecipe.url}>link</a>
         </div>
         <Row>
           <Tabs
             defaultActiveKey="profile"
             id="uncontrolled-tab-example"
-            className="mb-3"
-          >
+            className="mb-3">
             <Tab eventKey="Ingredients" title="Ingredients">
               <ListGroup>
                 {RecipleList &&
