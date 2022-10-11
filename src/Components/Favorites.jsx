@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import RecipeCard from './RecipeCard';
 import NoFavorites from './NoFavorites';
 
-
 export default function Favorites() {
     const FavoritesData = useSelector((state) => state.Favorites);
     if (FavoritesData.length === 0) {
