@@ -5,7 +5,7 @@
 <div align="center">
 
   <h3 align="center">EASY RECIPE 123 - Inspiration for Easy Recipes</h3>
-  https://easy-recipe-123.herokuapp.com/
+  https://easyrecipe-vnwn.onrender.com/
 </div>
 
 
