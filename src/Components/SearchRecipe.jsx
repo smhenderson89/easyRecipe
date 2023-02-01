@@ -13,12 +13,7 @@ function SearchRecipe() {
 
     const getRecipe = (event) => {
         event.preventDefault()
-        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.REACT_APP_ID_VAR}
-        &app_key=${process.env.REACT_APP__KEY}
-        &q=${inputValue}
-        &calories=500-1000
-        &imageSize=SMALL
-        &time=10-60`,
+        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.REACT_APP_ID_VAR}&app_key=${process.env.REACT_APP__KEY}&q=${inputValue}&calories=500-1000&imageSize=SMALL&time=10-60`,
             {
                 headers: {
                     'Access-Control-Allow-Origin': '*',
@@ -45,13 +40,11 @@ function SearchRecipe() {
 
     // UseEffect for Default API Call:
     const getDefaultRecipe = () => {
-        // const APP_ID = "0f25f43a";
-        // const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
-        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.REACT_APP_ID_VAR}
-        &app_key=${process.env.REACT_APP__KEY}
-        &q=pasta&calories=500-1000
-        &imageSize=SMALL
-        &time=10-60`,
+        // console.log('API called');
+        // event.preventDefault()
+        const APP_ID = "0f25f43a";
+        const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
+        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=pasta&calories=500-1000&imageSize=SMALL&time=10-60`,
             {
                 headers: {
                     'Access-Control-Allow-Origin': '*',
