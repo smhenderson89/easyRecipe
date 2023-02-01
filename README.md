@@ -42,7 +42,7 @@
 ![EE645221-7038-46BF-BA7E-F5D15A52BADF](https://user-images.githubusercontent.com/53064568/141382288-250095dd-42ee-488e-a85c-79a15a76f80e.jpeg)
 
 
-I wanted to create a website that would make it easy to look up new healthy meals. I find it easy to be prepareing the same list of 5-6 meals all the time and wanted an easy to navigate website to bring up ideas. For my DigitalCrafts bootcamp class, I used [React](https://reactjs.org/) and [Redux](https://reactjs.org/) to make a front-end website to navigate the [Ednamam API]((https://developer.edamam.com/?ref=public-apis)) to look up food recipes.
+I wanted to create a website that would make it easy to look up new healthy meals. I find it easy to be prepareing the same list of 5-6 meals all the time and wanted an easy to navigate website to bring up ideas. For my DigitalCrafts bootcamp class, I used [React](https://reactjs.org/) and [Redux](https://reactjs.org/) to make a front-end website to navigate the [Ednamam API](https://developer.edamam.com/?ref=public-apis) to look up food recipes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -70,8 +70,6 @@ This is an example of how to list things you need to use the software and how to
   ```
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Get a free API Key at [https://developer.edamam.com/?ref=public-apis](https://developer.edamam.com/?ref=public-apis)
 2. Clone the repo
