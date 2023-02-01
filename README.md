@@ -144,9 +144,3 @@ Project Link: [https://github.com/smhenderson89/easyRecipe](https://github.com/s
 * [Net Ninja Youtube Series](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
