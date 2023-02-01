@@ -46,6 +46,8 @@ function SearchRecipe() {
     // UseEffect for Default API Call:
     const getDefaultRecipe = (event) => {
         try {
+            // console.log(process.env.REACT_APP_ID_VAR);
+            // console.log(process.env.REACT_APP__KEY);
             axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.REACT_APP_ID_VAR}&app_key=${process.env.REACT_APP__KEY}&q=pasta&calories=500-1000&imageSize=SMALL&time=10-60`,
                 {
                     headers: {
