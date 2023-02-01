@@ -80,11 +80,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. Enter your API in `SearchRecipe.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   const API_ID = 'ENTER YOUR KEY';
-   ```
+4. Replace your ```API ID``` and  ```API KEY``` in `SearchRecipe.js`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -92,6 +88,8 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+<div align="center">
 
 Enter in a recipe idea into the **search box** (Ex: Pancakes....yummmmm)
 ![27013219-67DE-4A9E-A2D3-A2C5B2694FC7](https://user-images.githubusercontent.com/53064568/141382964-a8e3a8ef-b806-463f-9bf0-6b8b16a2f7a7.jpeg)
@@ -104,7 +102,7 @@ On the **Shopping** tab, hit the **checkmark** when you picked up the item on th
 
 **Favorite** the recipe for later use by clicking the **heart** icon. **Favorited** recipe will appear in the **Favorites** page
 ![39426F31-1D8B-4747-8BDB-B1FD295606D9](https://user-images.githubusercontent.com/53064568/141382661-ac579a54-c82b-43cc-92c6-9448e90bf09a.jpeg)
-
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
