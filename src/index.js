@@ -17,7 +17,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store = {store}>
       <App />
-      const dotenv = require("dotenv")
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

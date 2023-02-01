@@ -12,25 +12,38 @@ function SearchRecipe() {
     //initializing state to store user input value
 
     const getRecipe = (event) => {
-        event.preventDefault()
-        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.REACT_APP_ID_VAR}&app_key=${process.env.REACT_APP__KEY}&q=${inputValue}&calories=500-1000&imageSize=SMALL&time=10-60`,
-            {
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Content-Type': 'application/json',
-                  },
-            })
-            .then((res) => res.data)
-            .then((data) => {
-                if (data.count === 0) { // If no results for the search
-                    // console.log('no recipe found');
-                    setWarning(true)
-                    // setRecipeList()
-                } else {
-                    setWarning(false)
-                    return setRecipeList(data.hits)
-                }
-            });
+        try {
+            console.log(process.env.REACT_APP_ID_VAR);
+            console.log(process.env.REACT_APP__KEY);
+            event.preventDefault()
+            axios.get(`https://api.edamam.com/api/recipes/v2?type=public
+            &app_id=${process.env.REACT_APP_ID_VAR}
+            &app_key=${process.env.REACT_APP__KEY}
+            &q=${inputValue}
+            &calories=500-1000
+            &imageSize=SMALL
+            &time=10-60`,
+                {
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                        'Content-Type': 'application/json',
+                    },
+                })
+                .then((res) => res.data)
+                .then((data) => {
+                    if (data.count === 0) { // If no results for the search
+                        // console.log('no recipe found');
+                        setWarning(true)
+                        // setRecipeList()
+                    } else {
+                        setWarning(false)
+                        return setRecipeList(data.hits)
+                    }
+                });
+            }
+        catch (error) {
+            console.log(error);
+        }
     }    
 
     // function created to set the state of inputValue to the value of the input
@@ -42,23 +55,33 @@ function SearchRecipe() {
     const getDefaultRecipe = () => {
         // console.log('API called');
         // event.preventDefault()
-        const APP_ID = "0f25f43a";
-        const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
-        axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=pasta&calories=500-1000&imageSize=SMALL&time=10-60`,
-            {
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                    'Content-Type': 'application/json',
-                    },
-            })
-            .then((res) => res.data)
-            .then((data) => {
-                if (data.count === 0) { // If no results for the search
-                    setRecipeList() 
-                } else {
-                  return setRecipeList(data.hits)
-                }
-            });
+        // const APP_ID = "0f25f43a";
+        // const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
+        try {
+            axios.get(`https://api.edamam.com/api/recipes/v2?type=public
+            &app_id=${process.env.REACT_APP_ID_VAR}
+            &app_key=${process.env.REACT_APP__KEY}
+            &q=pasta
+            &calories=500-1000&imageSize=SMALL
+            &time=10-60`,
+                {
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                        'Content-Type': 'application/json',
+                        },
+                })
+                .then((res) => res.data)
+                .then((data) => {
+                    if (data.count === 0) { // If no results for the search
+                        setRecipeList() 
+                    } else {
+                    return setRecipeList(data.hits)
+                    }
+                });
+            }
+            catch (error) {
+                console.log(error);
+            }
         }
 
     // Invoke API under a useEffect or OnSubmit to prevent a death loop
