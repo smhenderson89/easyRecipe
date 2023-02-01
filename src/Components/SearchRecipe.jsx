@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import RecipeCard from './RecipeCard';
 import {Col, Row} from 'react-bootstrap';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 
 function SearchRecipe() {
     // State trackers
@@ -16,6 +16,9 @@ function SearchRecipe() {
         event.preventDefault()
         const APP_ID = "0f25f43a";
         const APP_KEY = "4638dc3291ceb38bd729a2d8d0bb4fbd";
+        console.log(process.env.REACT_APP_ID_VAR)
+        console.log('test');
+
         axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${APP_ID}&app_key=${APP_KEY}&q=${inputValue}&calories=500-1000&imageSize=SMALL&time=10-60`,
             {
                 headers: {
