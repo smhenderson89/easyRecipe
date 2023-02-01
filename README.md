@@ -128,9 +128,9 @@ See the [open issues](https://github.com/smhenderson89/easyRecipe/issues) for a 
 ## Contact
 
 Scott Henderson - [scott.mc.henderson@gmail.com](scott.mc.henderson@gmail.com)
-Github: [https://github.com/smhenderson89](https://github.com/smhenderson89)
-
-Project Link: [https://github.com/smhenderson89/easyRecipe](https://github.com/smhenderson89/easyRecipe)
+<br>Github: [https://github.com/smhenderson89](https://github.com/smhenderson89)
+<br>LinkedIN: [https://www.linkedin.com/in/scottmchenderson/](https://www.linkedin.com/in/scottmchenderson/)
+<br>Portfolio: [https://scotthenderson.netlify.app/](https://scotthenderson.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
