@@ -12,7 +12,6 @@ function SearchRecipe() {
     //initializing state to store user input value
 
     // Change .env variables depend on localhost or on production
-    console.log(process.env.NODE_ENV);
 
     const getRecipe = (event) => {
         try {
@@ -49,7 +48,6 @@ function SearchRecipe() {
     // UseEffect for Default API Call:
     const getDefaultRecipe = (event) => {
         try {
-            console.log('debug, testing why CORS issue?');
             // console.log(process.env.REACT_APP_ID_VAR);
             // console.log(process.env.REACT_APP__KEY);
             axios.get(`https://api.edamam.com/api/recipes/v2?type=public&app_id=${process.env.ID_VAR}&app_key=${process.env.KEY}&q=pasta&calories=500-1000&imageSize=SMALL&time=10-60`,
