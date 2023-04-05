@@ -15,7 +15,7 @@ function About() {
         <Row>
           <h3>About This Project</h3>
           <div>
-            <p>I wanted to create a website that would make it easy to look up new healthy meals. I find it easy to be prepareing the same list of 5-6 meals all the time and wanted an easy to navigate website to bring up ideas.</p>
+            <p>I wanted to create a website that would make it easy to look up new healthy meals. I find it easy to be preparing the same list of 5-6 meals all the time and wanted an easy to navigate website to bring up ideas.</p>
             <p>For my DigitalCrafts bootcamp class, I used <a href = "https://reactjs.org/">React</a> and <a href = "https://redux.js.org/">Redux</a> to make a front-end website to navigate the <a href = "https://developer.edamam.com/?ref=public-apis">Ednamam API</a> to look up food recipes.</p>
             <p>For more information, check out the <a href = "https://github.com/smhenderson89/easyRecipe">Github repo.</a></p>
           </div>
