@@ -24,6 +24,9 @@
     "redux": "^5.0.1",
     "web-vitals": "^5.1.0"
   },
+  "overrides": {
+    "eslint": "^8.57.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
