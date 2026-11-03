@@ -6,8 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Package manager conflicts - using pnpm
-package-lock.json
+# Package manager conflicts - using npm
+pnpm-lock.yaml
 yarn.lock
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
